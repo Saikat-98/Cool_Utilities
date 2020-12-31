@@ -1,0 +1,89 @@
+:root {
+  --mainWhite: #f5f5f5;
+  --mainGreen: #80cfa9;
+  --mainBlack: #333333;
+  --mainRed: #d62828;
+  --mainBlue: #11b5e4;
+}
+body {
+  background: black;
+  font-family: Amaranth;
+  color: #333333;
+  user-select: none;
+}
+.header{
+    color: #787878;
+    font-size: 87px;
+    font-weight: bold;
+}
+.time-stamp{
+    color: #202020;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.btn-green {
+  border-color: var(--mainGreen);
+  background: transparent;
+  box-shadow: 0px 0px 2px var(--mainGreen);
+  color: var(--mainGreen);
+}
+.btn-green:hover {
+  background: var(--mainGreen);
+  color: var(--mainBlack);
+}
+.form-control {
+  border-color: var(--mainGreen) !important;
+    box-shadow: 0px 0px 2px var(--mainGreen);
+}
+
+.feedback {
+  display: none;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #787878;
+}
+.item-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.complete-item {
+  color: var(--mainGreen);
+}
+.complete-item:hover {
+    transform: scale(1.2,1.2);
+  color: var(--mainWhite);
+}
+.edit-item {
+  color: var(--mainBlue);
+}
+.edit-item:hover {
+    transform: scale(1.2,1.2);
+  color: var(--mainWhite);
+}
+.delete-item {
+  color: var(--mainRed);
+}
+.delete-item:hover {
+    transform: scale(1.2,1.2);
+  color: var(--mainWhite);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.visibility {
+  opacity: 0.5;
+}
+.showItem {
+  display: block;
+}
